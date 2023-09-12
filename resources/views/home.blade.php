@@ -1,9 +1,16 @@
 @extends('layouts.main')
 
-@section('page-title', 'HOMEPAGE')
+@section('page-title', 'Laravel Migration Seeder')
 
 @section('content')
     <h1>
-        HOMEPAGE
+        Trains
     </h1>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                
+            </div>
+        </div>
+    </div>
 @endsection
