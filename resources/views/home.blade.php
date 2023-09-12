@@ -3,13 +3,13 @@
 @section('page-title', 'Laravel Migration Seeder')
 
 @section('content')
-    <h1>
+    <h1 class="text-center">
         Trains
     </h1>
     <div class="container">
         <div class="row">
            @foreach ($trains as $item)
-               <div class="card">
+               <div class="card mb-5">
                     <div class="card-body">
                         <h2>
                             Company : {{ $item->company }}
@@ -23,11 +23,11 @@
                         <h4>
                             Train Type: {{ $item->train_type }}
                         </h4>
-                        <h4>
-                            In Time:
+                        <h4 class="d-inline-block">
+                            In Time:    
                             @php
                                 if($item->in_time == true) {
-                                    echo 'yes';
+                                    echo '<h4 class="text-success d-inline-block ms-2">yes</h4>';
                                 }
                                 else {
                                     echo 'no';
